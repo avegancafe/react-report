@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup index.js -o dist/react-export.js -f iife",
+    "lint": "xo --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "rollup": "^0.50.0"
+    "rollup": "^0.50.0",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false
   }
 }
