@@ -4,6 +4,7 @@
   "description": "Reporting first",
   "main": "index.js",
   "scripts": {
+    "build": "rollup index.js -o dist/react-export.js -f iife",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
