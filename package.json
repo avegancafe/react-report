@@ -2,9 +2,9 @@
   "name": "react-export",
   "version": "0.0.1",
   "description": "Reporting first",
-  "main": "index.js",
+  "main": "dist/react-export.js",
   "scripts": {
-    "build": "rollup index.js -o dist/react-export.js -f iife",
+    "build": "rollup src/index.js -o dist/react-export.js -f iife",
     "lint": "xo --fix",
     "test": "xo && ava"
   },
