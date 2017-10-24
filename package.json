@@ -11,11 +11,15 @@
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.22.0",
+    "eslint": "^4.9.0",
+    "eslint-config-xo-react": "^0.13.0",
+    "eslint-plugin-react": "^7.4.0",
     "xo": "^0.18.2"
   },
   "xo": {
     "space": true,
-    "semicolon": false
+    "semicolon": false,
+    "extends": "xo-react"
   },
   "peerDependencies": {
     "react": "^16.0.0",
