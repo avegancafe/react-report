@@ -1,10 +1,10 @@
 {
-  "name": "react-export",
+  "name": "react-report",
   "version": "0.0.1",
   "description": "Reporting first",
-  "main": "dist/react-export.js",
+  "main": "dist/react-report.js",
   "scripts": {
-    "build": "rollup src/index.js -o dist/react-export.js -f es",
+    "build": "rollup src/index.js -o dist/react-report.js -f es",
     "lint": "xo --fix",
     "test": "xo && ava"
   },
