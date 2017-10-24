@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import {Column} from 'react-excel'
-import {Text} from 'react-pdf'
+import { Column } from 'react-excel'
+import { Text } from 'react-pdf'
 
 const sectionMapping = {
   pdf: Text,
@@ -13,11 +13,7 @@ class Text extends Component {
   render() {
     const TargetComponent = sectionMapping[this.props.target]
 
-    return (
-      <TargetComponent>
-        {this.props.children}
-      </TargetComponent>
-    )
+    return <TargetComponent>{this.props.children}</TargetComponent>
   }
 }
 
@@ -32,4 +28,3 @@ Text.defaultProps = {
 }
 
 export default Text
-

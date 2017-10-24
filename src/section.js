@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import {Sheet} from 'react-excel'
-import {Page} from 'react-pdf'
+import { Sheet } from 'react-excel'
+import { Page } from 'react-pdf'
 
 const sectionMapping = {
   pdf: Page,
@@ -13,11 +13,7 @@ class Section extends Component {
   render() {
     const TargetComponent = sectionMapping[this.props.target]
 
-    return (
-      <TargetComponent>
-        {this.props.children}
-      </TargetComponent>
-    )
+    return <TargetComponent>{this.props.children}</TargetComponent>
   }
 }
 
@@ -32,4 +28,3 @@ Section.defaultProps = {
 }
 
 export default Section
-

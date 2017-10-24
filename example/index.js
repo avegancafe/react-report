@@ -1,5 +1,5 @@
-import {Container, Text} from '../'
-import {Component} from 'react'
+import { Container, Text } from '../'
+import { Component } from 'react'
 
 const someTerms = [
   { id: 1, label: 'Deal Term 1' },
@@ -9,8 +9,10 @@ const someTerms = [
 
 class DealTerms extends Component {
   render() {
-    return <Container>
-      {someTerms.map(term => <Text>{term.label}</Text>)}
-    </Container>
+    return (
+      <Container>
+        {someTerms.map(term => <Text>{term.label}</Text>)}
+      </Container>
+    )
   }
 }
