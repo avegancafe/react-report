@@ -1,15 +1,15 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {Sheet} from 'react-excel'
-import {Page} from 'react-pdf'
+import {Column} from 'react-excel'
+import {Text} from 'react-pdf'
 
 const sectionMapping = {
-  pdf: Page,
-  xls: Sheet,
+  pdf: Text,
+  xls: Column,
   web: React.createFactory('div')
 }
 
-class Section extends Component {
+class Text extends Component {
   render() {
     const TargetComponent = sectionMapping[this.props.target]
 
@@ -21,15 +21,15 @@ class Section extends Component {
   }
 }
 
-Section.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element),
+Text.propTypes = {
+  children: PropTypes.string,
   target: PropTypes.string.isRequired
 }
 
-Section.defaultProps = {
+Text.defaultProps = {
   children: [],
   target: 'web'
 }
 
-export default Section
+export default Text
 
