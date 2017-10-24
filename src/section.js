@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 import {Worksheet} from 'react-excel'
 import {Page} from 'react-pdf'
 
@@ -8,7 +9,7 @@ const sectionMapping = {
   web: React.createFactory('div')
 }
 
-export default class extends Component {
+class Section extends Component {
   render() {
     const TargetComponent = sectionMapping[this.props.target]
 
@@ -19,3 +20,15 @@ export default class extends Component {
     )
   }
 }
+
+Section.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element),
+  target: PropTypes.string.isRequired
+}
+
+Section.defaultProps = {
+  children: []
+}
+
+export default Section
+

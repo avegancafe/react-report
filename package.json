@@ -22,6 +22,7 @@
     "extends": "xo-react"
   },
   "peerDependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-excel-workbook": "^0.0.4",
