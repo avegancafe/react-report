@@ -4,7 +4,7 @@
   "description": "Reporting first",
   "main": "dist/react-export.js",
   "scripts": {
-    "build": "rollup src/index.js -o dist/react-export.js -f iife",
+    "build": "rollup src/index.js -o dist/react-export.js -f es",
     "lint": "xo --fix",
     "test": "xo && ava"
   },

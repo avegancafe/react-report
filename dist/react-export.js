@@ -1,6 +1,5 @@
-(function () {
-'use strict';
+var Section = 'SECTION';
 
-console.log('hello, world!');
+var Text = 'TEXT';
 
-}());
+export { Section, Text };
