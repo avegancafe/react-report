@@ -2,9 +2,8 @@
   "name": "react-report",
   "version": "0.0.1",
   "description": "Reporting first",
-  "main": "dist/react-report.js",
+  "main": "src/index.js",
   "scripts": {
-    "build": "rollup src/index.js -o dist/react-report.js -f es",
     "lint": "xo --fix",
     "test": "xo && ava"
   },
@@ -12,7 +11,6 @@
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.22.0",
-    "rollup": "^0.50.0",
     "xo": "^0.18.2"
   },
   "xo": {
